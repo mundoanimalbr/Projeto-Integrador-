@@ -23,7 +23,7 @@ public class GroqService {
     @Value("${spring.ai.openai.api-key}")
     private String apiKey;
 
-    private final String URL_GROQ = "https://api.groq.com/openai/v1"; // Link para acessar o servidor do Groq
+    private final String URL_GROQ = "https://api.groq.com/openai/v1/chat/completions"; // Link para acessar o servidor do Groq
     private final ObjectMapper om = new ObjectMapper();  // Chama o Json
 
     public String pedirRecomendacaoAgricola(String tipoSensor, BigDecimal dado, String tipoSolo) {
